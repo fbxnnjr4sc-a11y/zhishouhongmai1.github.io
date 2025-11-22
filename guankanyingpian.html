@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>观看《1921》- 社区红色在线</title>
+    <style>
+        /* 基础样式：保持与原有网站风格一致 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "微软雅黑", sans-serif;
+        }
+        body {
+            background-color: #fff;
+            color: #333;
+            /* 延续你之前的150%放大设置 + 内容靠左 */
+            transform: scale(1.5);
+            transform-origin: top left;
+            width: 66.666%;
+            margin: 0;
+            padding: 20px 0; /* 仅顶部留少量间距，确保内容靠左 */
+        }
+        /* 响应式视频容器：保持16:9比例，适配不同屏幕 */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 视频比例（高度/宽度=9/16=0.5625） */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            margin-left: 0; /* 内容紧靠左侧 */
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none; /* 移除iframe默认边框 */
+        }
+        /* 视频标题样式：与红色主题匹配 */
+        .video-title {
+            color: #c00; /* 红色主题色 */
+            font-size: 22px;
+            margin-bottom: 15px;
+            margin-left: 0; /* 标题也紧靠左侧 */
+        }
+    </style>
+</head>
+<body>
+    <!-- 视频标题 -->
+    <h2 class="video-title">电影《1921》在线观看</h2>
+    
+    <!-- 腾讯视频嵌入容器 -->
+    <div class="video-container">
+        <!-- iframe嵌入代码：提取自腾讯视频链接，vid为"n0040it2wra" -->
+        <iframe 
+            src="https://v.qq.com/iframe/player.html?vid=n0040it2wra&tiny=0&auto=0&allowFullScreen=true"
+            allowfullscreen
+        ></iframe>
+    </div>
+</body>
+</html>
