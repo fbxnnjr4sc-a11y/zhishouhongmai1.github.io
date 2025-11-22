@@ -1,0 +1,211 @@
+/* 全局样式重置 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "微软雅黑", sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+
+  /* --- 核心修改：自动放大150%并靠左 --- */
+  transform: scale(1.5);
+  transform-origin: top left;
+  width: 66.666%;
+  margin: 0;
+  /* --- 修改结束 --- */
+}
+
+/* 顶部导航栏 */
+.top-bar {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.star {
+  color: #c00;
+  font-size: 28px;
+  margin-right: 10px;
+}
+
+.top-title {
+  font-size: 24px;
+  color: #c00;
+  margin-right: auto;
+}
+
+.search-input {
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.btn {
+  padding: 6px 12px;
+  border: 1px solid #c00;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #c00;
+  cursor: pointer;
+}
+
+/* 主导航栏 */
+.nav {
+  background-color: #c00;
+  display: flex;
+  padding: 10px;
+}
+
+.nav-item {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 15px;
+  font-size: 18px;
+}
+
+.nav-item.active {
+  background-color: #a00;
+}
+
+.nav-item:hover {
+  background-color: #a00;
+}
+
+/* 面包屑导航 */
+.breadcrumb {
+  background-color: #ddd;
+  padding: 8px;
+  font-size: 14px;
+}
+
+/* 内容区域通用样式 */
+.content {
+  padding: 20px;
+}
+
+/* 首页内容 */
+.home-content {
+  display: flex;
+}
+
+.home-left {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.memorial-title {
+  color: #c00;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.memorial-img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+.home-right {
+  width: 280px;
+  background-color: #f5b97d;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.explainer-title {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.explainer-img {
+  width: 180px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.call-icon {
+  width: 40px;
+  height: auto;
+}
+
+/* 红色播报列表 */
+.news-list {
+  list-style-type: none;
+}
+
+.news-list li {
+  margin-bottom: 10px;
+}
+
+/* 红色记忆故事列表 */
+.story-list .story-title {
+  color: #c00;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.story-list .story-desc {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+/* 红色精品影音列表 */
+.video-list {
+  display: flex;
+  flex-wrap: wrap;
+  /* 关键修改：让所有项目在顶部对齐 */
+  align-items: flex-start; 
+  /* 可选：在项目之间添加均匀的间距 */
+  gap: 20px; 
+}
+
+.video-item {
+  /* 关键修改：使用 calc 计算宽度，确保在有 gap 的情况下也能正确换行 */
+  /* 33.333% 是为了三列布局，减去的 13.333px 是为 gap 留出的空间 */
+  width: calc(33.333% - 13.333px); 
+  text-align: center;
+}
+
+.video-item img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+.video-item span {
+  color: #c00;
+  font-size: 16px;
+}
+
+/* 红色基因库分类按钮 */
+.gene-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gene-item {
+  width: 30%;
+  margin-right: 3%;
+  margin-bottom: 20px;
+}
+
+.gene-item button {
+  width: 100%;
+  padding: 15px;
+  background-color: #c00;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.gene-item button:hover {
+  background-color: #a00;
+}
